@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp1.MainMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainMenuWindow" Height="300" Width="300">
+    <StackPanel Margin="10,10,14,0" Height="259" VerticalAlignment="Top">
+        <Button Content="Регистрировать машину" Click="Button_Click_1"  />
+        <Button Click="Button_Click" Content="Выйти" Margin="100,0,117,0" />
+        <DataGrid Margin="10,100,0,200" x:Name="dtGrid" ItemsSource="{Binding}" RenderTransformOrigin="0.504,-3.846" Height="86" SelectionChanged="dtGrid_SelectionChanged" HorizontalAlignment="Left" Width="252"/>
+    </StackPanel>
+</Window>
